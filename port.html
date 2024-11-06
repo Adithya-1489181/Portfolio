@@ -1,0 +1,105 @@
+<html >
+<head>
+    <title>The Simple Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="landing" id="landingScreen">
+        <div>
+            <h1>Click here for my details</h1>
+            <button onclick="showMainContent()">Explore</button>
+        </div>
+    </div>
+
+    <nav id="navbar">
+        <div class="nav-title">Adithya</div>
+        <div class="nav-subtitle">Student</div>
+        <div>
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#skills">Skills</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="content" id="mainContent">
+        <section id="about">
+            <h2>About Me</h2>
+            <p>Hi there! 👋 I'm Adithya, a passionate Computer Science enthusiast. I'm always curious, always learning, and always excited about the possibilities of advancement in tech.</p>
+            <p>Want to know more? Feel free to explore my projects, or reach out to me directly. Let's chat about tech, cinematography or simply a random fun fact!</p>
+        </section>
+
+        <section id="projects">
+            <h2>Projects</h2>
+            <div class="project-list">
+                <div class="project">
+                    <img src="cat.jpg" alt="Project 1 Image">
+                    <div class="project-details">
+                        <p class="project-title">Project 1</p>
+                        <p>Description of Project 1. <a href="#" target="_blank">View project</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="cat.jpg" alt="Project 2 Image">
+                    <div class="project-details">
+                        <p class="project-title">Project 2</p>
+                        <p>Description of Project 2. <a href="#" target="_blank">View project</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src= "cat.jpg" alt="Project 3 Image">
+                    <div class="project-details">
+                        <p class="project-title">Project 3</p>
+                        <p>Description of Project 3. <a href="#" target="_blank">View project</a></p>
+                    </div>
+                </div>
+                <div class="project">
+                    <img src="https://via.placeholder.com/120" alt="Project 4 Image">
+                    <div class="project-details">
+                        <p class="project-title">Project 4</p>
+                        <p>Description of Project 4. <a href="#" target="_blank">View project</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2>Skills</h2>
+            <ul style="list-style-type: disc;">
+                <li><h3>Technical</h3></li>
+                <ul style="list-style-type: circle;">
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                    <li>Python</li>
+                    <li>Java</li>
+                    <li>SQL</li>
+                </ul>
+                <li><h3>Other</h3></li>
+                <ul style="list-style-type: circle;">
+                    <li>Video Editing</li>
+                    <li>Content Writing</li>
+                    <li>Cinematography</li>
+                </ul>
+            </ul>
+        </section>
+
+        <section id="contact">
+            <h2>Contact</h2>
+            <p>Email: <a href="adithya1489181@gmail.com">adithya1489181@gmail.com</a></p>
+            <p>LinkedIn: <a href="https://www.linkedin.com/in/adithya-02370a290" target="_blank">linkedin.com/in/Adithya</a></p>
+        </section>
+    </div>
+
+    <script>
+        function showMainContent() {
+            document.getElementById('landingScreen').classList.add('slide-up');
+            setTimeout(() => {
+                document.getElementById('mainContent').style.display = 'block';
+                document.getElementById('navbar').style.backgroundColor = '#444';
+                document.body.style.overflow = 'auto';
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
