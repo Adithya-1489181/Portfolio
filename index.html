@@ -2,11 +2,14 @@
 <head>
     <title>The Simple Portfolio</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
     <div class="landing" id="landingScreen">
         <div>
-            <h1>Click here for my details</h1>
+            <h1>Hey There,</h1>
+            <p><b>Welcome To My Portfolio</b></p>
             <button onclick="showMainContent()">Explore</button>
         </div>
     </div>
@@ -25,39 +28,61 @@
     <div class="content" id="mainContent">
         <section id="about">
             <h2>About Me</h2>
-            <p>Hi there! 👋 I'm Adithya, a passionate Computer Science enthusiast. I'm always curious, always learning, and always excited about the possibilities of advancement in tech.</p>
+            <p>Hi there! 👋 <b>I'm Adithya</b>, a passionate Computer Science enthusiast. I'm always curious, always learning, and always excited about the possibilities of advancement in tech.</p>
             <p>Want to know more? Feel free to explore my projects, or reach out to me directly. Let's chat about tech, cinematography or simply a random fun fact!</p>
         </section>
 
         <section id="projects">
             <h2>Projects</h2>
-            <div class="project-list">
-                <div class="project">
-                    <img src="cat.jpg" alt="Project 1 Image">
-                    <div class="project-details">
-                        <p class="project-title">Project 1</p>
-                        <p>Description of Project 1. <a href="#" target="_blank">View project</a></p>
+            <div class="project-category">
+                <h3>Technical</h3>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="https://cdn.pixabay.com/photo/2023/07/04/19/43/man-8106958_1280.png" alt="Technical Project 1 Image">
+                        <div class="project-details">
+                            <p class="project-title">Technical Project 1</p>
+                            <p>Currently no project to show <a href="#" target="_blank">View project</a></p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="https://cdn.pixabay.com/photo/2017/05/09/13/33/laptop-2298286_1280.png" alt="Technical Project 2 Image">
+                        <div class="project-details">
+                            <p class="project-title">Technical Project 2</p>
+                            <p>Currently no project to show <a href="#" target="_blank">View project</a></p>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <img src="cat.jpg" alt="Project 2 Image">
-                    <div class="project-details">
-                        <p class="project-title">Project 2</p>
-                        <p>Description of Project 2. <a href="#" target="_blank">View project</a></p>
+            </div>
+
+            <div class="project-category">
+                <h3>Video Editing</h3>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="https://cdn.pixabay.com/photo/2013/07/13/10/05/film-156504_1280.png" alt="Video Editing Project 1 Image">
+                        <div class="project-details">
+                            <p class="project-title">REEL EDITS</p>
+                            <p>Here are some of my reel edits!! <br><b>Check Out Here</b> 👉 <a href="https://drive.google.com/drive/folders/1Dm0Ab3NwiE33OrB-W58bU58oeZFlj6Hu?usp=sharing" target="_blank">View project</a></p>
+                        </div>
+                    </div>
+                    <div class="project">
+                        <img src="https://cdn.pixabay.com/photo/2019/01/22/10/58/pixel-cells-3947916_1280.png" alt="Video Editing Project 2 Image">
+                        <div class="project-details">
+                            <p class="project-title">Video Editing Project 2</p>
+                            <p>Currently no project to show <a href="#" target="_blank">View project</a></p>
+                        </div>
                     </div>
                 </div>
-                <div class="project">
-                    <img src= "cat.jpg" alt="Project 3 Image">
-                    <div class="project-details">
-                        <p class="project-title">Project 3</p>
-                        <p>Description of Project 3. <a href="#" target="_blank">View project</a></p>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="https://via.placeholder.com/120" alt="Project 4 Image">
-                    <div class="project-details">
-                        <p class="project-title">Project 4</p>
-                        <p>Description of Project 4. <a href="#" target="_blank">View project</a></p>
+            </div>
+
+            <div class="project-category">
+                <h3>Writing</h3>
+                <div class="project-list">
+                    <div class="project">
+                        <img src="https://cdn.pixabay.com/photo/2018/11/13/22/01/instagram-3814080_1280.png" alt="Other Project 1 Image">
+                        <div class="project-details">
+                            <p class="project-title">Poetry</p>
+                            <p>Intrested in Kannada poetry!!<br><b>Check Out Here</b> 👉 <a href="https://www.instagram.com/kavitegala_saalalli/" target="_blank">kavitegala_saalalli</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,29 +90,32 @@
 
         <section id="skills">
             <h2>Skills</h2>
-            <ul style="list-style-type: disc;">
+            <ul style="list-style-type: none;">
                 <li><h3>Technical</h3></li>
-                <ul style="list-style-type: circle;">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>JavaScript</li>
-                    <li>Python</li>
-                    <li>Java</li>
-                    <li>SQL</li>
+                <ul style="list-style-type: none;">
+                    <li><i class="fab fa-html5"></i> HTML</li>
+                    <li><i class="fab fa-css3-alt"></i> CSS</li>
+                    <li><i class="fab fa-js"></i> JavaScript</li>
+                    <li><i class="fab fa-python"></i> Python</li>
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
                 </ul>
                 <li><h3>Other</h3></li>
-                <ul style="list-style-type: circle;">
-                    <li>Video Editing</li>
-                    <li>Content Writing</li>
-                    <li>Cinematography</li>
+                <ul style="list-style-type: none;">
+                    <li><i class="fas fa-video"></i> Video Editing</li>
+                    <li><i class="fas fa-pencil-alt"></i> Content Writing</li>
+                    <li><i class="fas fa-film"></i> Cinematography</li>
                 </ul>
             </ul>
         </section>
 
         <section id="contact">
             <h2>Contact</h2>
-            <p>Email: <a href="adithya1489181@gmail.com">adithya1489181@gmail.com</a></p>
-            <p>LinkedIn: <a href="https://www.linkedin.com/in/adithya-02370a290" target="_blank">linkedin.com/in/Adithya</a></p>
+            <p>Want to get in touch? Reach out to me via the following platforms:</p>
+            <p><i class="fas fa-phone"></i> +917204735097</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:adithya1489181@gmail.com">adithya1489181@gmail.com</a></p>
+            <p><i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/adithya-02370a290" target="_blank">linkedin.com/in/Adithya</a></p>
+            <p><i class="fab fa-github"></i> <a href="https://github.com/Adithya-1489181">github.com/Adithya-1489181</a></p>
         </section>
     </div>
 

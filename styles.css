@@ -27,7 +27,6 @@ body, html {
     color: #000000;
     text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.773);
 }
-
 .landing button {
     margin-top: 30px;
     padding: 30px 40px;
@@ -101,7 +100,7 @@ nav a:hover {
 }
 
 section {
-    max-width: 1000px;
+    max-width: 1200px;
     margin: 20px auto;
     padding: 20px;
     border-radius: 8px;
@@ -128,7 +127,6 @@ h2 {
     gap: 20px;
     justify-content: space-between;
 }
-
 .project {
     display: flex;
     align-items: center;
@@ -162,4 +160,15 @@ h2 {
 
 .contact-item a:hover {
     text-decoration: underline;
+}
+#about p {
+    font-size: 18px; /* Adjust the size as needed */
+}
+
+.landing p {
+    font-size: 60px;
+    margin: 0;
+    padding: 5px ;
+    color: black;
+    text-shadow: 3px 3px 10px rgba(255, 255, 255, 0.773);
 }
